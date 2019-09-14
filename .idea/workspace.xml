@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LuxTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/LuxTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/framents/main-menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/framents/main-menu.jsp" afterDir="false" />
-    </list>
+    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +61,16 @@
       <option name="presentableId" value="Default" />
       <updated>1568449270930</updated>
       <workItem from="1568449272303" duration="190000" />
-      <workItem from="1568450129986" duration="2224000" />
+      <workItem from="1568450129986" duration="2650000" />
     </task>
+    <task id="LOCAL-00001" summary="rosa commit">
+      <created>1568453617344</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568453617344</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,5 +88,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="rosa commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="rosa commit" />
   </component>
 </project>

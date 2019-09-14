@@ -3,7 +3,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white">
 
-    <h1 style="display: inline-block; position: relative; left: 5%">
+    <h1 style="display: inline-block; position: relative; left: 6%">
     <a class="navbar-bran mr-2" href="/"><img src="/statics/images/lux3.png" width="150" height="70" alt="" ></a></h1>
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav nav nav-pills nav-fill">
