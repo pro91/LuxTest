@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="" />
+    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login-page.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +65,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568449270930</updated>
       <workItem from="1568449272303" duration="190000" />
-      <workItem from="1568450129986" duration="2650000" />
+      <workItem from="1568450129986" duration="13860000" />
     </task>
     <task id="LOCAL-00001" summary="rosa commit">
       <created>1568453617344</created>
@@ -70,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568453617344</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="rosa commit2">
+      <created>1568453991403</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568453991403</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,6 +102,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rosa commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="rosa commit" />
+    <MESSAGE value="rosa commit2" />
+    <option name="LAST_COMMIT_MESSAGE" value="rosa commit2" />
   </component>
 </project>

@@ -12,73 +12,29 @@
     <script src="/webjars/bootstrap/4.1.1/js/bootstrap.js"></script>
     <script src="/webjars/popper.js/1.14.1/umd/popper.js"></script>
 </head>
-<body>
-
+<body background="/statics/images/people-beach.jpg" style="height:900px";>
 <jsp:include page="framents/main-menu.jsp"/>
-<img src="/statics/images/people-beach.jpg">
 
-<div class="container">
-
-    <sec:authorize access="isAuthenticated()">
-        <div class="row" style="margin-top: 40px; margin-bottom: 10px">
-            <div class="col-1"></div>
-            <div class="col-6"><h2>Dodaj ogłoszenie</h2></div>
-            <div class="col-5"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8">
-                <form method="post" action="/add-advert">
-                    <div class="form-group">
-                        <label for="title">Tytuł ogłoszenia:</label>
-                        <input type="text" required name="title" id="title" class="form-control"
-                               placeholder="Podaj tytuł ogłoszenia"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="description">Hasło</label>
-                        <textarea name="description" id="description"
-                                  class="form-control"
-                                  placeholder="Uzupełnij opis ogłoszenia"></textarea>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Dodaj</button>
-                    <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
-                    <sec:csrfInput/>
-                </form>
-            </div>
-            <div class="col-2"></div>
-        </div>
-    </sec:authorize>
-
-    <div class="row" style="margin-top: 40px; margin-bottom: 10px">
-        <div class="col-1"></div>
-        <div class="col-6"><h2>Lista ogłoszeń</h2></div>
-        <div class="col-5"></div>
-    </div>
-
-    <div class="row">
-        <div class="col-12" style="padding-bottom: 20px">
-            <table>
-                <tr>
-                    <th>Lp.</th>
-                    <th>Tytuł</th>
-                    <th>Treść</th>
-                    <th>Autor</th>
-                    <th>Data dodania</th>
-                </tr>
-                <c:forEach items="${adverts}" var="advert" varStatus="stat">
-                    <tr>
-                        <td>${stat.count}</td>
-                        <td><b>${advert.title}</b></td>
-                        <td>${advert.description}</td>
-                        <td>${advert.owner.username}</td>
-                        <td>${advert.posted}</td>
-                    </tr>
-                </c:forEach>
-            </table>
-        </div>
-    </div>
-
-</div>
 </body>
+<footer>
+    <p>
+    <div style="margin: 15px; text-align: center; bottom: -800px; position: relative">
+    <span style="margin: 10px">
+    <a href="/regulamin" class="k21 no">Regulamin</a>
+    </span>
+        <span style="margin: 10px">
+    <a href="/polityka-prywatnosci" class="k21 no">Polityka prywatności</a>
+    </span>
+        <span style="margin: 10px">
+    <a href="/pomoc" class="k21 no">Kontakt i pomoc</a>
+    </span>
+        <span style="margin: 10px">
+        <a href="/onas" class="k21 no">O Nas </a>
+    </span>
+    </div>
+    </p>
+    <p>
+    <div style="color: dimgrey; bottom: -800px; position: relative; margin: 15px 0; font-size: 14px; text-align: center" id="footer-copyright"> Copyright © 2019 Luxury <span class="hide"> ▼</span></div>
+    </p>
+</footer>
 </html>
