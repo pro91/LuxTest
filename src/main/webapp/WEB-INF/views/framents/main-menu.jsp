@@ -22,9 +22,6 @@
         <form class="form-inline mr-2 mt-3" method="get" action="/login">
             <button class="btn btn-outline-primary" type="submit">Zaloguj</button>
         </form>
-        <form class="form-inline mt-3" method="get" action="/register">
-            <button class="btn btn-outline-success" type="submit">Zarejestruj</button>
-        </form>
     </sec:authorize>
     <sec:authorize access="isAuthenticated()">
         <div style="margin-right: 20px"> Witaj, <strong>${pageContext.request.userPrincipal.principal.username}</strong></div>

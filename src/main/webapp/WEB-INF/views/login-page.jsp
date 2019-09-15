@@ -11,7 +11,7 @@
     <script src="/webjars/bootstrap/4.1.1/js/bootstrap.js"></script>
     <script src="/webjars/popper.js/1.14.1/umd/popper.js"></script>
 </head>
-<body background="/statics/images/people-beach.jpg" style="height:900px";>
+<body background="/statics/images/people-beach.jpg">
 
 <jsp:include page="framents/main-menu.jsp"/>
 <div class="container">
@@ -51,7 +51,7 @@
 </body>
 <footer>
     <p>
-    <div style="margin: 15px; text-align: center; bottom: -400px; position: relative">
+    <div style="margin: 15px; text-align: center; bottom: 0px; position: static">
     <span style="margin: 10px">
     <a href="/regulamin" class="k21 no">Regulamin</a>
     </span>
@@ -67,7 +67,7 @@
     </div>
     </p>
     <p>
-    <div style="color: dimgrey; bottom: -400px; position: relative; margin: 15px 0; font-size: 14px; text-align: center" id="footer-copyright"> Copyright © 2019 Luxury <span class="hide"> ▼</span></div>
+    <div style="color: dimgrey; bottom: 0px; position: static; margin: 15px 0; font-size: 14px; text-align: center" id="footer-copyright"> Copyright © 2019 Luxury <span class="hide"> ▼</span></div>
     </p>
 </footer>
 </html>
