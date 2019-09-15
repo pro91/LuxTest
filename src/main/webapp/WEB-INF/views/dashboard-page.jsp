@@ -14,10 +14,47 @@
 </head>
 <body background="/statics/images/people-beach.jpg";>
 <jsp:include page="framents/main-menu.jsp"/>
-
         <div class="col-5"></div>
+<div class="container">
+    <div class="row" style="margin-top: 40px">
+        <div class="col-1"></div>
+        <div class="col-10" style="padding-bottom: 20px"><h2>Dane konta ${pageContext.request.userPrincipal.principal.username}</h2></div>
+        <div class="col-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-6">
+            <form method="post" action="/dashboard">
+                <div class="form-group">
+                    <label for="username">Nazwa użytkownika</label>
+                    <input type="text" required name="username" id="username" class="form-control"
+                           placeholder="${pageContext.request.userPrincipal.principal.username}"/>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">Imię</label>
+                    <input type="text" required name="firstName" id="firstName" class="form-control"
+                           placeholder="${user.getFirstName()}"/>
+                </div>
+            <div class="form-group">
+                <label for="lastName">Nazwisko</label>
+                <input type="text" required name="lastName" id="lastName" class="form-control"
+                       placeholder="${user.getLastName()}"/>
+            </div>
+            <div class="form-group">
+                <label for="password">Hasło</label>
+                <input type="password" required name="password" id="password"
+                       class="form-control" placeholder="${user.getPassword()}"/>
+            </div>
+                <button class="btn btn-primary" type="submit">Nadpisz dane</button>
+                <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
+                <sec:csrfInput/>
+            </div>
+            </form>
+        </div>
     </div>
 </div>
+
+
 </body>
 <footer>
     <p>

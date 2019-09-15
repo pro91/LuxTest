@@ -32,6 +32,8 @@ public class RegistrationController {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
+    public RegistrationController() {
+    }
 
     @GetMapping
     public String prepareRegistrationPage(Model model) {
