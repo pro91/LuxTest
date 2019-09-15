@@ -36,7 +36,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
             .authorizeRequests()
                 .antMatchers("/").permitAll()   // Dodajemy stronę główną, aby mógł wejść na nią każdy
                 .antMatchers("/webjars/**").permitAll()
-                .antMatchers("/register").anonymous()
+                .antMatchers("/register").permitAll()
                 .antMatchers("/login").anonymous()
                 .antMatchers("/logout").authenticated()
                 .antMatchers("/statics/**").permitAll()
@@ -44,7 +44,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
             .formLogin()
                 .loginPage("/login")
-                .defaultSuccessUrl("/") // Usuwamy plik `index.html` i dajemy ścieżkę do kontrolera strony głównej
+                .defaultSuccessUrl("/dashboard") // Usuwamy plik `index.html` i dajemy ścieżkę do kontrolera strony głównej
                 .and()
             .logout()
                 .logoutSuccessUrl("/");  // j.w.

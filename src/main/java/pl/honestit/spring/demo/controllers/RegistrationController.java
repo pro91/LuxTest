@@ -54,6 +54,6 @@ public class RegistrationController {
         if (users.isEmpty()) {
             userRepository.save(user);
         }
-        return "redirect:/index.html";
+        return "redirect:/login";
     }
 }

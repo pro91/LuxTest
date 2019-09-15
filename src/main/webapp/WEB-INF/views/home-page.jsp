@@ -45,15 +45,15 @@
                     <input type="password" required name="password" id="password"
                            class="form-control" placeholder="Podaj hasło"/>
                 </div>
-                <div class="form-group">
-                    <label for="lastName">Płeć</label>
-                    <%--                    <input type="text" required name="plec" id="plec" class="form-control"/>--%>
-                    <br/>
-                    <input type="checkbox"/> K
-                    <input type="checkbox"/> M
-                    <br/>
+<%--                <div class="form-group">--%>
+<%--                    <label for="lastName">Płeć</label>--%>
+<%--                    &lt;%&ndash;                    <input type="text" required name="plec" id="plec" class="form-control"/>&ndash;%&gt;--%>
+<%--                    <br/>--%>
+<%--                    <input type="checkbox"/> K--%>
+<%--                    <input type="checkbox"/> M--%>
+<%--                    <br/>--%>
 
-                </div>
+<%--                </div>--%>
                 <button class="btn btn-primary" type="submit">Zarejestruj</button>
                 <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
                 <sec:csrfInput/>
