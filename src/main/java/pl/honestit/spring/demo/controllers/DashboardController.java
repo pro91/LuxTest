@@ -1,5 +1,6 @@
 package pl.honestit.spring.demo.controllers;
 
+import org.aspectj.bridge.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -12,8 +13,10 @@ import org.springframework.web.multipart.MultipartFile;
 import pl.honestit.spring.demo.model.domain.User;
 import pl.honestit.spring.demo.model.repositories.UserRepository;
 
+import javax.validation.constraints.Email;
 import java.io.IOException;
 import java.security.Principal;
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -37,7 +40,8 @@ public class DashboardController {
         return "dashboard-page";
     }
     @PostMapping
-    public String processRegistrationPage(String username, String password, String firstName, String lastName,@RequestParam MultipartFile file) throws IOException {
+    public String processRegistrationPage(LocalDate birthdate, String email, String username, String password, String firstName, String lastName, @Email  @RequestParam MultipartFile file) throws IOException {
+
         User user = new User();
         user.setUsername(username);
         String encodedPassword = passwordEncoder.encode(password);
@@ -46,6 +50,8 @@ public class DashboardController {
         user.setLastName(lastName);
         user.setActive(true);
         user.setFile(file.getBytes());
+        user.setBirthDate(birthdate);
+        user.setEmail(email);
 
         List<User> users = userRepository.findAllByUsername(username);
         if (users.isEmpty()) {

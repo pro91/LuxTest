@@ -23,42 +23,52 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-6">
-            <form enctype="multipart/form-data" method="post" action="/register">
+            <form enctype="multipart/form-data" method="post" action="/dashboard">
                 <div class="form-group">
                     <label for="username">Nazwa użytkownika</label>
                     <input type="text" required name="username" id="username" class="form-control"
                            placeholder="Podaj nazwę użytkownika"/>
-                </div>
-                <div class="form-group">
-                    <label for="firstName">Imię</label>
-                    <input type="text" required name="firstName" id="firstName" class="form-control"
-                           placeholder="Podaj imię"/>
-                </div>
-                <div class="form-group">
-                    <label for="lastName">Nazwisko</label>
-                    <input type="text" required name="lastName" id="lastName" class="form-control"
-                           placeholder="Podaj nazwisko"/>
-                </div>
+<%--                </div>--%>
+<%--                <div class="form-group">--%>
+<%--                    <label for="firstName">Imię</label>--%>
+<%--                    <input type="text" required name="firstName" id="firstName" class="form-control"--%>
+<%--                           placeholder="Podaj imię"/>--%>
+<%--                </div>--%>
+<%--                <div class="form-group">--%>
+<%--                    <label for="lastName">Nazwisko</label>--%>
+<%--                    <input type="text" required name="lastName" id="lastName" class="form-control"--%>
+<%--                           placeholder="Podaj nazwisko"/>--%>
+<%--                </div>--%>
 
                 <div class="form-group">
                     <label for="password">Hasło</label>
                     <input type="password" required name="password" id="password"
                            class="form-control" placeholder="Podaj hasło"/>
                 </div>
+                    <div class="form-group">
+                        <label for="email">Mail</label>
+                        <input type="email" required name="email" id="email"
+                               class="form-control" placeholder="Podaj adres email"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="birthdate">Date urodzenia</label>
+                        <input type="birthdate" required name="birthdate" id="birthdate"
+                               class="form-control" placeholder="Podaj datę urodzenia"/>
+                    </div>
                     <p>
                         Add photo: <input type="file" name="file"/>
                     </p>
 
 
-<%--                <div class="form-group">--%>
-<%--                    <label for="lastName">Płeć</label>--%>
-<%--                    &lt;%&ndash;                    <input type="text" required name="plec" id="plec" class="form-control"/>&ndash;%&gt;--%>
-<%--                    <br/>--%>
-<%--                    <input type="checkbox"/> K--%>
-<%--                    <input type="checkbox"/> M--%>
-<%--                    <br/>--%>
+                <div class="form-group">
+                    <label for="lastName">Płeć</label>
+<%--                    <input type="text" required name="plec" id="plec" class="form-control"/>--%>
+                    <br/>
+                    <input type="checkbox"/> Kobieta
+                    <input type="checkbox"/> Mężczyzna
+                    <br/>
 
-<%--                </div>--%>
+                </div>
                 <button class="btn btn-primary" type="submit">Zarejestruj</button>
                 <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
                 <sec:csrfInput/>

@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="" />
+    <list default="true" id="b3619ec5-64fb-48db-b0d7-723c4c45688e" name="Default Changelist" comment="rosa commit8">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/controllers/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/controllers/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/controllers/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/controllers/RegistrationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/model/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/honestit/spring/demo/model/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dashboard-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/dashboard-page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home-page.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QouSeNvBDfQfn1sN0AdakuvZZR" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -61,7 +94,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568449270930</updated>
       <workItem from="1568449272303" duration="190000" />
-      <workItem from="1568450129986" duration="14447000" />
+      <workItem from="1568450129986" duration="15069000" />
+      <workItem from="1568483901362" duration="6456000" />
+      <workItem from="1568531094522" duration="604000" />
+      <workItem from="1568532728070" duration="12698000" />
+      <workItem from="1568553262906" duration="1738000" />
+      <workItem from="1569050859001" duration="13220000" />
     </task>
     <task id="LOCAL-00001" summary="rosa commit">
       <created>1568453617344</created>
@@ -84,7 +122,63 @@
       <option name="project" value="LOCAL" />
       <updated>1568468910257</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rosa commit3">
+      <created>1568469578300</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568469578300</updated>
+    </task>
+    <task id="LOCAL-00005" summary="rosa commit4">
+      <created>1568469712523</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1568469712523</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rosa commit5">
+      <created>1568532887303</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1568532887303</updated>
+    </task>
+    <task id="LOCAL-00007" summary="dashboard">
+      <created>1568536229120</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568536229120</updated>
+    </task>
+    <task id="LOCAL-00008" summary="dashboard">
+      <created>1568536533922</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568536533922</updated>
+    </task>
+    <task id="LOCAL-00009" summary="dashboard">
+      <created>1568536616719</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568536616719</updated>
+    </task>
+    <task id="LOCAL-00010" summary="rosa commit6">
+      <created>1568553333676</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1568553333676</updated>
+    </task>
+    <task id="LOCAL-00011" summary="rosa commit8">
+      <created>1569058793669</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569058793669</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +201,11 @@
     <MESSAGE value="rosa commit" />
     <MESSAGE value="rosa commit2" />
     <MESSAGE value="rosa commit3" />
-    <option name="LAST_COMMIT_MESSAGE" value="rosa commit3" />
+    <MESSAGE value="rosa commit4" />
+    <MESSAGE value="rosa commit5" />
+    <MESSAGE value="dashboard" />
+    <MESSAGE value="rosa commit6" />
+    <MESSAGE value="rosa commit8" />
+    <option name="LAST_COMMIT_MESSAGE" value="rosa commit8" />
   </component>
 </project>

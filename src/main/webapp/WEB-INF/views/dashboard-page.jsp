@@ -24,6 +24,7 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-6">
+
             <form method="post" action="/dashboard">
                 <div class="form-group">
                     <label for="username">Nazwa użytkownika</label>
@@ -31,14 +32,14 @@
                            placeholder="${pageContext.request.userPrincipal.principal.username}"/>
                 </div>
                 <div class="form-group">
-                    <label for="firstName">Imię</label>
-                    <input type="text" required name="firstName" id="firstName" class="form-control"
-                           placeholder="${user.getFirstName()}"/>
+                    <label for="email">email</label>
+                    <input type="text" required name="email" id="email" class="form-control"
+                           placeholder="${user.getEmail()}"/>
                 </div>
             <div class="form-group">
-                <label for="lastName">Nazwisko</label>
-                <input type="text" required name="lastName" id="lastName" class="form-control"
-                       placeholder="${user.getLastName()}"/>
+                <label for="birthdate">Data urodzenia</label>
+                <input type="birthdate" required name="birthdate" id="birthdate" class="form-control"
+                       placeholder="${user.getBirthDate()}"/>
             </div>
             <div class="form-group">
                 <label for="password">Hasło</label>
@@ -46,7 +47,7 @@
                        class="form-control" placeholder="${user.getPassword()}"/>
             </div>
                 <div class="form-group">
-                    <img src="/dashboard/profile-image"/>
+                    <img src="/dashboard/profile-image"; height="250px", width="250px"/>
                     <label for="file">File</label>
                     <input type="file" required name="file" id="file"
                            class="form-control" placeholder="${user.getFile()}"/>

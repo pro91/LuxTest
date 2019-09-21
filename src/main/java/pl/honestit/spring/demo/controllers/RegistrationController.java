@@ -1,5 +1,6 @@
 package pl.honestit.spring.demo.controllers;
 
+import org.apache.naming.factory.SendMailFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ import pl.honestit.spring.demo.model.repositories.UserRepository;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.List;
 
 @Controller
@@ -46,7 +48,7 @@ public class RegistrationController {
     }
 
     @PostMapping
-    public String processRegistrationPage(String username, String password, String firstName, String lastName, @RequestParam MultipartFile file) throws IOException {
+    public String processRegistrationPage(LocalDate birthdate, String email, String username, String password, String firstName, String lastName, @RequestParam MultipartFile file) throws IOException {
         User user = new User();
         user.setUsername(username);
         String encodedPassword = passwordEncoder.encode(password);
@@ -55,6 +57,8 @@ public class RegistrationController {
         user.setLastName(lastName);
         user.setActive(true);
         user.setFile(file.getBytes());
+        user.setBirthDate(birthdate);
+        user.setEmail(email);
 
         List<User> users = userRepository.findAllByUsername(username);
         if (users.isEmpty()) {

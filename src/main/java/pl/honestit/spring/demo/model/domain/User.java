@@ -1,6 +1,11 @@
 package pl.honestit.spring.demo.model.domain;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotEmpty;
+import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.Objects;
 
@@ -23,6 +28,28 @@ public class User {
     private Boolean active;
     @Column(name="file", columnDefinition = "bytea")
     private byte[] file;
+    @Email(message = "Email should be valid")
+    @NotEmpty
+    @Column
+    private String email;
+    @Column(name = "birthdate", nullable = true)
+    private LocalDate birthDate;
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(LocalDate birthDate) {
+        this.birthDate = birthDate;
+    }
 
     public byte[] getFile() {
         return file;
@@ -90,6 +117,8 @@ public class User {
                 ", lastName='" + lastName + '\'' +
                 ", active=" + active +
                 ", file=" + Arrays.toString(file) +
+                ", email='" + email + '\'' +
+                ", birthDate=" + birthDate +
                 '}';
     }
 
