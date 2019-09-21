@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-6">
-            <form method="post" action="/register">
+            <form enctype="multipart/form-data" method="post" action="/register">
                 <div class="form-group">
                     <label for="username">Nazwa użytkownika</label>
                     <input type="text" required name="username" id="username" class="form-control"
@@ -45,6 +45,11 @@
                     <input type="password" required name="password" id="password"
                            class="form-control" placeholder="Podaj hasło"/>
                 </div>
+                    <p>
+                        Add photo: <input type="file" name="file"/>
+                    </p>
+
+
 <%--                <div class="form-group">--%>
 <%--                    <label for="lastName">Płeć</label>--%>
 <%--                    &lt;%&ndash;                    <input type="text" required name="plec" id="plec" class="form-control"/>&ndash;%&gt;--%>

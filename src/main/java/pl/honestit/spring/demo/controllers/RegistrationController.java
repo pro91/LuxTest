@@ -7,11 +7,14 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 import pl.honestit.spring.demo.model.domain.User;
 import pl.honestit.spring.demo.model.repositories.UserRepository;
 
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+import java.io.IOException;
 import java.util.List;
 
 @Controller
@@ -43,7 +46,7 @@ public class RegistrationController {
     }
 
     @PostMapping
-    public String processRegistrationPage(String username, String password, String firstName, String lastName) {
+    public String processRegistrationPage(String username, String password, String firstName, String lastName, @RequestParam MultipartFile file) throws IOException {
         User user = new User();
         user.setUsername(username);
         String encodedPassword = passwordEncoder.encode(password);
@@ -51,6 +54,7 @@ public class RegistrationController {
         user.setFirstName(firstName);
         user.setLastName(lastName);
         user.setActive(true);
+        user.setFile(file.getBytes());
 
         List<User> users = userRepository.findAllByUsername(username);
         if (users.isEmpty()) {

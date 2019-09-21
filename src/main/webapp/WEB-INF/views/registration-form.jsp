@@ -42,6 +42,7 @@
                     <input type="password" required name="password" id="password"
                            class="form-control" placeholder="Podaj hasło"/>
                 </div>
+
                 <button class="btn btn-primary" type="submit">Zarejestruj</button>
                 <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
                 <sec:csrfInput/>

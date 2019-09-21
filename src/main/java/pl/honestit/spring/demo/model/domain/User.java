@@ -1,6 +1,7 @@
 package pl.honestit.spring.demo.model.domain;
 
 import javax.persistence.*;
+import java.util.Arrays;
 import java.util.Objects;
 
 @Entity
@@ -20,6 +21,16 @@ public class User {
     private String lastName;
     @Column(nullable = false)
     private Boolean active;
+    @Column(name="file", columnDefinition = "bytea")
+    private byte[] file;
+
+    public byte[] getFile() {
+        return file;
+    }
+
+    public void setFile(byte[] file) {
+        this.file = file;
+    }
 
     public Long getId() {
         return id;
@@ -78,6 +89,7 @@ public class User {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", active=" + active +
+                ", file=" + Arrays.toString(file) +
                 '}';
     }
 

@@ -22,6 +22,7 @@ public class Advert {
     @Column(name = "owner_id", insertable = false, updatable = false)
     private Long ownerId;
 
+
     @PrePersist
     public void prePersist() {
         this.posted = LocalDateTime.now();
@@ -34,6 +35,7 @@ public class Advert {
     public void setId(Long id) {
         this.id = id;
     }
+
 
     public String getTitle() {
         return title;

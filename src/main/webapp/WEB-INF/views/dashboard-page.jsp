@@ -45,6 +45,13 @@
                 <input type="password" required name="password" id="password"
                        class="form-control" placeholder="${user.getPassword()}"/>
             </div>
+                <div class="form-group">
+                    <img src="/dashboard/profile-image"/>
+                    <label for="file">File</label>
+                    <input type="file" required name="file" id="file"
+                           class="form-control" placeholder="${user.getFile()}"/>
+                </div>
+
                 <button class="btn btn-primary" type="submit">Nadpisz dane</button>
                 <button class="btn btn-secondary" type="reset">Wyczyść dane</button>
                 <sec:csrfInput/>
