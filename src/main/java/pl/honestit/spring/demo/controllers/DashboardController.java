@@ -1,6 +1,8 @@
 package pl.honestit.spring.demo.controllers;
 
 import org.aspectj.bridge.Message;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ByteArrayResource;
 import org.springframework.core.io.Resource;
@@ -23,11 +25,14 @@ import java.util.List;
 @RequestMapping("/dashboard")
 public class DashboardController {
 
+    private static final Logger log = LoggerFactory.getLogger("DashboardController");
+
     private UserRepository userRepository;
     private PasswordEncoder passwordEncoder;
 
     @Autowired
     public DashboardController(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+        log.error("ULALALLAa");
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
     }
@@ -37,26 +42,6 @@ public class DashboardController {
         String username = principal.getName();
         User user = userRepository.findByUsername(username);
         model.addAttribute("user", user);
-        return "dashboard-page";
-    }
-    @PostMapping
-    public String processRegistrationPage(LocalDate birthdate, String email, String username, String password, String firstName, String lastName, @Email  @RequestParam MultipartFile file) throws IOException {
-
-        User user = new User();
-        user.setUsername(username);
-        String encodedPassword = passwordEncoder.encode(password);
-        user.setPassword(encodedPassword);
-        user.setFirstName(firstName);
-        user.setLastName(lastName);
-        user.setActive(true);
-        user.setFile(file.getBytes());
-        user.setBirthDate(birthdate);
-        user.setEmail(email);
-
-        List<User> users = userRepository.findAllByUsername(username);
-        if (users.isEmpty()) {
-            userRepository.save(user);
-        }
         return "dashboard-page";
     }
 

@@ -23,7 +23,7 @@
     <div class="row">
         <div class="col-1"></div>
         <div class="col-6">
-            <form enctype="multipart/form-data" method="post" action="/dashboard">
+            <form enctype="multipart/form-data" method="post" action="/">
                 <div class="form-group">
                     <label for="username">Nazwa użytkownika</label>
                     <input type="text" required name="username" id="username" class="form-control"
@@ -52,7 +52,7 @@
                     </div>
                     <div class="form-group">
                         <label for="birthdate">Date urodzenia</label>
-                        <input type="birthdate" required name="birthdate" id="birthdate"
+                        <input type="date" name="birthdate" id="birthdate"
                                class="form-control" placeholder="Podaj datę urodzenia"/>
                     </div>
                     <p>
